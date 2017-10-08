@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario Hoja de Vida</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" type="text/css" href="css/estilos.css" />
+       
+    </head>
+    <body>
+        <h1><center>HOJA DE VIDA </center></h1>
+		<p> El siguiente formato debe ser llenado completamente con los datos solicitados. </p> 
+		
+		
+		<form  method = "get" name= "envioDatos" action = "HojaServlet" onsubmit = "return validar()"> 
+		<center><table border= "4">
+			
+		<th colspan= "2"><h2>DATOS PERSONALES</h2></th>
+		<tr>
+		<td ><h2>Nombres </td> <td><input name= "nombres" id = "nombres"value = "" type ="text" size = "40"> </input> </td></h2>
+		<tr>
+			<td><h2>Apellidos </td> <td><input name= "apellidos" id = "apellidos" value = "" size = "40"> </input> </td></h2>
+		</tr>
+		
+		<tr>
+			<td><h2>Documento </td> <td> <input name= "documento" id = "documento" value = "" type="number" size = "40" maxlength = "15"> </input></td></h2>
+		</tr>
+		
+		<tr>
+			<td> <h2>Edad  </h2> </td> <td>  <input name= "edad" id = "edad" value = ""  size = "40" type="number" maxlength = "3"> </input></td></h2>
+		</tr>
+		
+		<tr>
+			<td><h2>Telefono </td><td> <input name= "telefono" id = "telefono" value = "" type="number" size = "40" > </input></td></h2>
+		</tr>
+		<tr>
+			<td><h2>Direccion </td><td> <input name= "direccion" id = "direccion" value = ""size = "40" > </input></td></h2>
+		</tr>
+		<tr>
+			<td><h2>E-mail </td><td> <input name= "email" id = "email" value = "" size = "40"> </input></td></h2>
+		</tr>
+		
+			<tr>
+			<td><h2>Lugar de Nacimiento </td><td> <input name= "lugarNacimiento" id ="lugarNacimiento" value = ""size = "40" > </input></h2></td>
+		</tr>
+		
+		<th colspan= "2"><h2>FORMACION ACADEMICA</h2></th>
+		</tr>
+			<tr>
+			<td><h2>Nivel de Estudio </td><td><select style="width: 530px" name= "nivel" id ="nivel" value = "" > 
+			<option selected> </option>
+			<option>primaria</option>
+			<option>Basica (noveno)</option>
+			<option>Bachiller</option>
+			<option>Tecnico</option>
+			<option>Pregado</option>
+			<option>Posgrado</option>
+			</select> 
+			</td></h2>
+		</tr>
+		<tr>
+			<td><h2>Institucion del ultimo curso </td><td><input name= "institucion" id= "institucion" value = ""size = "40" > </input>   </td></h2>
+		</tr>
+                <tr>
+			<td><h2>Fecha de Finalización</td><td><input name= "fechaFin" id ="fechaFin" value = "" size = "40"> </input>   </td></h2></tr>
+		</tr>
+		<tr>
+			<td><h2>Idiomas</td><td><input name= "idiomas" id ="idiomas" value = "" size = "40"> </input>   </td></h2></tr>
+		</tr>
+		<th colspan= "2"><h2>EXPERIENCIA LABORAL</h2></th>
+		<tr>
+			<td><h2>Experiencia laboral</td><td><select style="width: 530px" name= "cuadroLaboral" id ="cuadroLaboral" value = "" > 
+			<option selected> </option>
+			<option>Si</option>
+			<option>No</option> 
+			
+			</select>   </td></h2>
+		</tr>
+		<tr>
+			<td><h2>Empresa del ultimo empleo </td><td><input name= "cuadroEmpleo" id ="cuadroEmpleo" value = "" size = "40"> </input>   </td></h2>
+		</tr>
+		<th colspan= "2"><h2>REFERENCIAS</h2></th>
+		<tr>
+                    
+                    </tr>
+		<th colspan= "2"><h2>REFERENCIAS PERSONALES</h2></th>
+		<tr>
+			<td><h2>Nombre Referencia 1 </td><td><input name= "cuadroPersonaUno" id ="cuadroPersonaUno" value = "" size = "40"> </input>   </td></h2></tr>
+		</tr>
+		<tr>
+			<td><h2>Telefono Referencia 1 </td><td><input name= "cuadroTelefonoUno" id ="cuadroTelefonoUno" value = "" size = "40"> </input>   </td></h2>
+		</tr>
+                
+                </tr>
+		<th colspan= "2"><h2>REFERENCIAS LABORALES</h2></th>
+		<tr>
+		<tr>
+			<td><h2>Nombre Referencia 2 </td><td><input name= "cuadroPersonaDos" id ="cuadroPersonaDos" value = "" size = "40"> </input>   </td></h2>
+		</tr>
+		<tr>
+			<td><h2>Telefono Referencia 2 </td><td><input name= "cuadroTelefonoDos" id ="cuadroTelefonoDos" value = "" size = "40"> </input>   </td></h2>
+		</tr>
+		<th colspan= "2"><h2>OTROS</h2></th>
+			<tr>
+			<td><h2>Disponibilidad de salir de la Ciudad</td><td><select style="width: 530px" name= "viaje" id ="viaje" value = "" > 
+			<option selected> </option>
+			<option>Si</option>
+			<option>No</option> 
+			
+			</select>   </td></h2>
+		</tr>
+		
+			<tr>
+			<td><h2>Visa</h2> </td><td>  
+			<select style="width: 530px" name= "visa" id ="visa" value = "" > 
+			<option selected> </option>
+			<option>Si</option>
+			<option>No</option> 
+			
+			</select>   </td></h2>
+		</tr>
+			
+		</tr>
+			<tr>
+			<td><h2>Moto o carro Propio</h2> </td><td>
+			<select style="width: 530px" name= "vehiculo" id ="vehiculo" value = "" > 
+			<option selected> </option>
+			<option>Si</option>
+			<option>No</option> 
+			
+			</select>   </td></h2>
+		</tr>
+		
+			<td align = "center" colspan = "2"> <input type="submit" value="Enviar Datos"> </td>
+	
+		</table></center>
+		</form> 
+		
+    </body>
+</html>

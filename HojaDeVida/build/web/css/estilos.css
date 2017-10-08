@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1/03/2017, 07:24:17 PM
+    Author     : Juliana Alexandra
+*/
+body {
+	background-color: #CFF7EE;
+	font-size: 35 px;
+}
+
+h1 {
+	font-size: 70px;
+	color: #044739;
+	font-family: algerian;
+}
+
+p{
+	font-size: 35px;
+	color: #011A14;
+	font-family: Berlin Sans FB;
+}
+
+h2 {
+	
+	font-size: 45px;
+	font-family: Arial;
+}
+
+input {
+	font-size: 30px;
+	color: #05102E;
+	background-color: #DADEF4;
+}
+
+table {
+	color : #071322;
+	background-color: #D7E3FA;
+}
+
+input{
+	font-family: Berlin Sans FB;
+	background-color: #C7D6FF;
+}
+
+
+
